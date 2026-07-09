@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RailGuardPro v3 Pro | Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header class="topbar">
+
+<div class="logo">
+
+🚆 RailGuardPro v3 Pro
+
+</div>
+
+<div class="user">
+
+<span id="employeeName">
+
+Welcome Railway Employee
+
+</span>
+
+<button onclick="logout()">
+
+Logout
+
+</button>
+
+</div>
+
+</header>
+
+<nav class="sidebar">
+
+<h3>MENU</h3>
+
+<ul>
+
+<li><a href="dashboard.html">🏠 Dashboard</a></li>
+
+<li><a href="train-report.html">🚆 Train Report</a></li>
+
+<li><a href="wtt.html">📄 Working Time Table</a></li>
+
+<li><a href="crew.html">👨‍✈️ Crew Module</a></li>
+
+<li><a href="defect.html">⚠️ Defect Report</a></li>
+
+<li><a href="ai.html">🤖 AI Assistant</a></li>
+
+<li><a href="#">📊 PDF Export</a></li>
+
+<li><a href="#">🌙 Dark Mode</a></li>
+
+<li><a href="#">⚙ Settings</a></li>
+
+</ul>
+
+</nav>
+
+<main class="main">
+
+<h1>
+
+Professional Railway Dashboard
+
+</h1>
+
+<p>
+
+Indian Railway Train Managers Smart Assistant
+
+</p>
+
+<div class="dashboardGrid">
+
+<div class="card">
+
+<h2>🚆 Train Report</h2>
+
+<p>
+
+Generate Professional Running Report
+
+</p>
+
+<button onclick="location.href='train-report.html'">
+
+Open
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>📄 Working Time Table</h2>
+
+<p>
+
+Upload Railway Working Time Table PDF
+
+</p>
+
+<button onclick="location.href='wtt.html'">
+
+Open
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>🔍 Train Search</h2>
+
+<p>
+
+Search Train Number & Auto Load WTT
+
+</p>
+
+<input
+
+type="text"
+
+id="searchTrain"
+
+placeholder="Train Number">
+
+<button onclick="searchTrain()">
+
+Search
+
+</button>
+
+</div>

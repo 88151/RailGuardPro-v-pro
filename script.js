@@ -17,13 +17,20 @@ const app = {
 // Dark Mode
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
-}
+}function login() {
 
-// Login
-function login() {
+    const employeeId = document.getElementById("employeeId").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-    alert("Railway Employee Login Module - Coming Soon");
+    if (employeeId === "" || password === "") {
+        alert("कृपया Employee ID और Password दर्ज करें।");
+        return;
+    }
 
+    // अभी Demo Login
+    alert("Login Successful");
+
+    window.location.href = "dashboard.html";
 }
 
 // Logout

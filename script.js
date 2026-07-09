@@ -144,4 +144,81 @@ function generateReport() {
 
 }
 
-console.log("RailGuardPro v3 Pro Loaded Successfully");
+console.log("RailGuardPro v3 Pro Loaded Successfully");// =====================================
+// RailGuardPro v3 Pro
+// Application Logic Part-2
+// =====================================
+
+// Time Difference (Minutes)
+function getMinutesDifference(start, end){
+
+if(start=="" || end=="") return 0;
+
+const s=start.split(":");
+const e=end.split(":");
+
+const startMin=parseInt(s[0])*60+parseInt(s[1]);
+const endMin=parseInt(e[0])*60+parseInt(e[1]);
+
+return endMin-startMin;
+
+}
+
+// Running Calculation
+function calculateRunning(){
+
+const railArrival=document.getElementById("railArrival").value;
+const railDeparture=document.getElementById("railDeparture").value;
+
+const publicArrival=document.getElementById("publicArrival").value;
+const publicDeparture=document.getElementById("publicDeparture").value;
+
+const actualArrival=document.getElementById("actualArrival").value;
+const actualDeparture=document.getElementById("actualDeparture").value;
+
+const distance=parseFloat(document.getElementById("distance").value)||0;
+
+let detention=0;
+let gain=0;
+let loss=0;
+
+// Railway Detention
+if(actualArrival!="" && actualDeparture!=""){
+detention=getMinutesDifference(actualArrival,actualDeparture);
+}
+
+// Railway Gain/Loss
+if(railArrival!="" && actualArrival!=""){
+
+const diff=getMinutesDifference(railArrival,actualArrival);
+
+if(diff<0){
+gain=Math.abs(diff);
+}
+else{
+loss=diff;
+}
+
+}
+
+// Average Speed
+
+let speed=0;
+
+if(distance>0 && detention>0){
+
+speed=(distance/(detention/60)).toFixed(2);
+
+}
+
+document.getElementById("gainTime").value=gain;
+
+document.getElementById("lossTime").value=loss;
+
+document.getElementById("detention").value=detention;
+
+document.getElementById("averageSpeed").value=speed;
+
+alert("Running Calculation Completed");
+
+}

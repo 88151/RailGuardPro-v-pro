@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RailGuardPro Login</title>
+<title>RailGuardPro v3 Pro - Login</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -15,13 +17,23 @@
 
 <h2>Railway Employee Login</h2>
 
-<input type="text" placeholder="Employee ID">
+<input
+type="text"
+id="employeeId"
+placeholder="Employee ID">
 
-<input type="password" placeholder="Password">
+<input
+type="password"
+id="password"
+placeholder="Password">
 
-<button>Login</button>
+<button onclick="login()">
+Login
+</button>
 
-<p>Only Authorized Railway Employees</p>
+<p>
+Only Authorized Railway Employees
+</p>
 
 </div>
 

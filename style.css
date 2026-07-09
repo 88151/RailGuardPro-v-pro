@@ -1,0 +1,123 @@
+/* =====================================================
+   RailGuardPro v3 Pro
+   Professional Railway Smart Assistant
+   Version : 3.0
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#f5f7fa;
+    color:#222;
+
+}
+
+header{
+
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:25px;
+
+}
+
+header h1{
+
+    font-size:34px;
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    font-size:18px;
+
+}
+
+main{
+
+    width:95%;
+    max-width:1400px;
+    margin:auto;
+    padding:25px;
+
+}
+
+section{
+
+    background:white;
+    margin-top:20px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+}
+
+section h2{
+
+    color:#003366;
+    margin-bottom:15px;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+ul li{
+
+    padding:12px;
+    margin:8px 0;
+    background:#eef5ff;
+    border-left:5px solid #0057b8;
+    border-radius:5px;
+
+}
+
+button{
+
+    background:#0057b8;
+    color:white;
+    border:none;
+    padding:12px 18px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:#003d82;
+
+}
+
+input,
+select{
+
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #cccccc;
+    border-radius:6px;
+
+}
+
+footer{
+
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+
+}
